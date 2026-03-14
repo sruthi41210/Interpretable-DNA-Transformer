@@ -1,0 +1,57 @@
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+
+class CharTokenizer {
+  +vocab: dict
+  +pad_token: int
+  +encode(seq: str): list
+  +decode(tokens: list): str
+}
+
+class TinyDNAEncoder {
+  +tok_emb: nn.Embedding
+  +pos_emb: nn.Embedding
+  +layers: nn.ModuleList
+  +cls_head: nn.Linear
+  +forward(x): Tensor
+}
+
+class TinyDNAEncoderALiBi {
+  +alibi_bias: Tensor
+  +forward(x): Tensor
+}
+
+class DNADataset {
+  +data: DataFrame
+  +tokenizer: CharTokenizer
+  +max_len: int
+  +__getitem__(idx): tuple
+  +__len__(): int
+}
+
+class Trainer {
+  +model: TinyDNAEncoder
+  +optimizer: AdamW
+  +scaler: GradScaler
+  +train_epoch(loader): float
+  +validate(loader): float
+}
+
+class ISMAnalyzer {
+  +model: TinyDNAEncoder
+  +mutate_and_score(seq, window): float
+  +get_importance_curve(seq): np.array
+}
+
+class JASPARMatcher {
+  +jaspar_db: list
+  +compare_pwm(pwm): tuple
+}
+
+TinyDNAEncoderALiBi --|> TinyDNAEncoder : extends
+Trainer --> TinyDNAEncoder : uses
+DNADataset --> CharTokenizer : uses
+ISMAnalyzer --> TinyDNAEncoder : uses
+JASPARMatcher --> ISMAnalyzer : receives PWMs from
+@enduml

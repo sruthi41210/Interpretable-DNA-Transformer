@@ -1,0 +1,13 @@
+{
+  "split":"test",
+  "cluster_id":2,
+  "k":6,
+  "n_used_windows":250,
+  "important_hit_rate":0.02,
+  "background_hit_rate":0.004,
+  "fold_enrichment":4.999999999,
+  "z":1.642880185,
+  "p_value_approx":0.1004077255,
+  "top_windows_csv":"runs\/top_windows_alibi.csv",
+  "clusters_csv":"runs\/interpret\/pro_k6_clusters.csv"
+}

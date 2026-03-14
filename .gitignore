@@ -1,0 +1,34 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ===== Virtual Environment =====
+.venv/
+Include/
+Lib/
+Scripts/
+-p/
+pyvenv.cfg
+
+# ===== Model Checkpoints (large files) =====
+runs/checkpoints/*.pt
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Large data files (optional — uncomment if you don't want data in git) =====
+# data/*.csv
+# data/*.meme
+# data/*.txt

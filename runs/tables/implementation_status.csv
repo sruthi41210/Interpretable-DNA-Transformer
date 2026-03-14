@@ -1,0 +1,13 @@
+Module,Component,Status,Output,Lines of Code
+Data Prep,make_splits.py,✅ Complete,Train/val/test CSVs,150
+Data Prep,CharTokenizer,✅ Complete,Encoded sequences,80
+Model,TinyDNAEncoder,✅ Complete,Baseline model,200
+Model,TinyDNAEncoderALiBi,✅ Complete,ALiBi model,220
+Training,train.py,✅ Complete,Checkpoints,300
+Evaluation,evaluate.py,✅ Complete,Metrics JSON,150
+K-mer,kmer_enrichment.py,✅ Complete,Enrichment stats,180
+K-mer,cluster_kmers.py,✅ Complete,Cluster CSVs,120
+ISM,mutagenesis_aggregate.py,✅ Complete,ISM scores,250
+Validation,jaspar_compare.py,✅ Complete,TFAP2A match,200
+Visualization,visualize_ism_examples.py,✅ Complete,ISM plots,150
+Total,-, ✅ Complete,~2000 lines of implementation,-

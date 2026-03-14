@@ -1,0 +1,5 @@
+Of the 1000 high-ISM context windows analysed, 261 (26.1%) contain at least one TFAP2A motif instance (GCCNNNGGC, <=1 mismatch).
+
+38 windows contain two or more TFAP2A sites, yielding 42 pairwise inter-motif distances with a median spacing of 16 bp (mean 19.6 bp). This relatively tight spacing suggests the model has learned to recognise clustered TFAP2A binding sites as a feature of promoter sequences.
+
+The motifs most frequently co-occurring with TFAP2A in these windows are: KLF7 (MA1959.2), VEZF1 (MA1578.2), KLF12 (MA0742.2).

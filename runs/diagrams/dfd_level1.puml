@@ -1,0 +1,24 @@
+@startuml
+!theme plain
+skinparam roundcorner 10
+
+database "Sequence CSV" as input
+rectangle "1.0 Tokenization" as tok
+rectangle "2.0 Model Training" as train
+rectangle "3.0 Prediction" as pred
+rectangle "4.0 ISM Analysis" as ism
+rectangle "5.0 JASPAR Match" as jaspar
+database "Checkpoint.pt" as ckpt
+database "ISM_Windows.csv" as ismout
+actor "Researcher" as user
+
+input --> tok : Raw Sequences
+tok --> train : Token Tensors
+train --> ckpt : Save Model Weights
+ckpt --> pred : Load Model
+input --> pred : Test Sequences
+pred --> ism : High-Confidence Predictions
+ism --> ismout : High-Importance Windows
+ismout --> jaspar : PWMs
+jaspar --> user : Validated Motifs (TFAP2A)
+@enduml

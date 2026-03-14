@@ -1,0 +1,17 @@
+metric,value
+total_context_windows,1000
+windows_with_tfap2a,261
+windows_with_multi_tfap2a,38
+pairwise_distances_count,42
+median_inter_motif_distance_bp,16
+mean_inter_motif_distance_bp,19.6
+cooccurrence_rank1,KLF7 (MA1959.2): 0.024
+cooccurrence_rank2,VEZF1 (MA1578.2): 0.016
+cooccurrence_rank3,KLF12 (MA0742.2): 0.008
+cooccurrence_rank4,KLF1 (MA0493.3): 0.008
+cooccurrence_rank5,CTCFL (MA1102.3): 0.007
+cooccurrence_rank6,KLF14 (MA0740.2): 0.006
+cooccurrence_rank7,KLF10 (MA1511.2): 0.006
+cooccurrence_rank8,E2F6 (MA0471.3): 0.006
+cooccurrence_rank9,TFAP2B (MA0811.2): 0.004
+cooccurrence_rank10,TFAP2C (MA0524.3): 0.004

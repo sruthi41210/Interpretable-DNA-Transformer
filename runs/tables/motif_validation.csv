@@ -1,0 +1,4 @@
+Analysis Method,Discovered Motif,JASPAR Match,Correlation,Enrichment,P-value,Interpretation
+K-mer Enrichment,GC-rich clusters,ZNF610,0.972,0.65x,0.013,Background (depleted)
+ISM Windows,GCCNNNGGC,TFAP2A,0.869,1.51x,1.04e-05,Causal (enriched)
+Core Element Test,TATA/Inr,TBP/Inr,0.72,1.2x,0.004,Architecture (significant)

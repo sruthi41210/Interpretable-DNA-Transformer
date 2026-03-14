@@ -1,0 +1,6 @@
+Dataset,Total Sequences,Positive,Negative,Avg Length,GC Content
+Promoters (human_nontata),35682,17841,17841,500bp,0.58
+Enhancers (human_cohn),28947,14474,14473,500bp,0.45
+Train Split,45240,22620,22620,500bp,0.52
+Val Split,9694,4847,4847,500bp,0.52
+Test Split,9695,4848,4847,500bp,0.52

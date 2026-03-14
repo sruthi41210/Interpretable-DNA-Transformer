@@ -1,0 +1,10 @@
+Component,Baseline,ALiBi
+Layers,4,4
+Attention Heads,8,8
+Hidden Dimension,256,256
+Positional Encoding,Learned,ALiBi (linear bias)
+Parameters,~2.1M,~2.1M
+Sequence Length,500bp,500bp
+Batch Size,32,32
+Learning Rate,1e-4,1e-4
+Optimizer,AdamW,AdamW

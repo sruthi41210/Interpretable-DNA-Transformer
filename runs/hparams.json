@@ -1,0 +1,33 @@
+{
+  "model": {
+    "max_len": 512,
+    "d_model": 192,
+    "n_layers": 6,
+    "n_heads": 6,
+    "d_ff": 768,
+    "dropout": 0.1,
+    "n_classes": 2
+  },
+  "training": {
+    "batch_size": 32,
+    "epochs": 35,
+    "learning_rate": 0.0003,
+    "optimizer": "AdamW",
+    "amp": true,
+    "reverse_complement_augmentation": true
+  },
+  "early_stopping": {
+    "patience": 5,
+    "min_delta": 0.0005,
+    "monitor": "val_pr_auc"
+  },
+  "data": {
+    "dataset_train": "data/enh_train.csv",
+    "dataset_test": "data/enh_test.csv",
+    "run_name": "enh_alibi",
+    "checkpoint": "runs/checkpoints/enh_alibi.pt",
+    "tokenisation": "character-level (A=0, C=1, G=2, T=3)",
+    "sequence_length": 500
+  },
+  "seed": 42
+}

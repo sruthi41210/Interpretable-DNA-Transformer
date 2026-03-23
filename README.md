@@ -32,7 +32,7 @@ dna-slm/
 │   ├── visuals/                # ISM example visualizations
 │   ├── tables/                 # Formatted tables (CSV/LaTeX)
 │   ├── report_sections/        # Midterm report chapters
-│   ├── presentation/           # Slide guide & speaker notes
+│   ├── presentation/           # Slides 
 │   └── final_deliverables/     # Compiled report draft
 │
 └── notebooks/                  # Jupyter notebooks (future)
